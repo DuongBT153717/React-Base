@@ -21,13 +21,13 @@ const ClientHeader = () => {
             }}
           >
             <img src={LOGOBRAND} height="65px" width="65px" />
-            <Typography variant="h6" component="div" sx={{ fontSize: 25 }}>
+            <Typography style={{fontFamily: "Helvetica"}} variant="h6" component="div" sx={{ fontSize: 25 }}>
               CENRE
             </Typography>
           </Box>
           <Box display="flex" gap="18px">
-            <Link to="/a" style={{ textDecoration: "none" }}>
-              <Typography sx={typoSX}>TRANG CHỦ</Typography>
+            <Link to="/a" style={{ textDecoration: "none"}}>
+              <Typography style={{fontFamily: "Helvetica"}} sx={typoSX}>TRANG CHỦ</Typography>
             </Link>
             <NavLink
               to="/client/intro"
@@ -39,9 +39,9 @@ const ClientHeader = () => {
               }}
             >
               {({ isActive }) => (
-                <Typography sx={{borderRight: '1px solid #000', paddingRight:'18px', color: isActive ? '#003B72': '#000','&:hover': {
+                <Typography style={{fontFamily: "Helvetica"}} sx={{borderRight: '1px solid #000', paddingRight:'18px', color: isActive ? '#003B72': '#000','&:hover': {
                   color: 'blue',
-                }}}>Gioi thieu</Typography>
+                }}}>GIỚI THIỆU</Typography>
               )}
             </NavLink>
             <NavLink
@@ -54,31 +54,31 @@ const ClientHeader = () => {
               }}
             >
               {({ isActive }) => (
-                <Typography sx={{borderRight: '1px solid #000', paddingRight:'18px', color: isActive ? '#003B72': '#000','&:hover': {
+                <Typography style={{fontFamily: "Helvetica"}} sx={{borderRight: '1px solid #000', paddingRight:'18px', color: isActive ? '#003B72': '#000','&:hover': {
                   color: 'blue',
-                }}}>Thoi Tiet</Typography>
+                }}}>THỜI TIẾT</Typography>
               )}
             </NavLink>
             <Link to="/c" style={{ textDecoration: "none" }}>
-              <Typography sx={typoSX}>CHỈ SỐ MÔI TRƯỜNG</Typography>
+              <Typography style={{fontFamily: "Helvetica"}} sx={typoSX}>CHỈ SỐ MÔI TRƯỜNG</Typography>
             </Link>
-            <Link to="/d" style={{ textDecoration: "none" }}>
-              <Typography sx={typoSX}>DỰ BÁO KHÍ HẬU</Typography>
+            <Link to="/d" style={{ textDecoration: "none" ,fontFamily: "Arial"}}>
+              <Typography style={{fontFamily: "Helvetica"}} sx={typoSX}>DỰ BÁO KHÍ HẬU</Typography>
             </Link>
             <Link to="/e" style={{ textDecoration: "none" }}>
-              <Typography sx={typoSX}>SỨC KHỎE & HOẠT ĐỘNG</Typography>
+              <Typography style={{fontFamily: "Helvetica"}} sx={typoSX}>SỨC KHỎE & HOẠT ĐỘNG</Typography>
             </Link>
             <Link to="/f" style={{ textDecoration: "none" }}>
-              <Typography sx={typoSX}>CHỦ ĐỀ</Typography>
+              <Typography style={{fontFamily: "Helvetica"}} sx={typoSX}>CHỦ ĐỀ</Typography>
             </Link>
             <Link to="/g" style={{ textDecoration: "none" }}>
-              <Typography sx={typoSX}>TIN TỨC</Typography>
+              <Typography style={{fontFamily: "Helvetica"}} sx={typoSX}>TIN TỨC</Typography>
             </Link>
             <Link to="/h" style={{ textDecoration: "none" }}>
-              <Typography sx={typoLast}>LIÊN HỆ</Typography>
+              <Typography style={{fontFamily: "Helvetica"}} sx={typoLast}>LIÊN HỆ</Typography>
             </Link>
           </Box>
-          <Button variant="contained" size="small">
+          <Button variant="contained" size="small" style={{display: "inline-block",fontFamily: "Helvetica",fontSize: "13px"}}>
             Bà Rịa – Vũng Tàu
           </Button>
         </Toolbar>

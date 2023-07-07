@@ -78,13 +78,16 @@ const ClientFooter = () => {
               CHÍNH SÁCH BẢO MẬT
             </Typography>
           </Box>
-          <Button variant="contained" sx={buttonLogin}>
+          <Button size="small">
             <Typography
               color="#003B72"
               fontSize="12px"
               fontWeight="400"
               lineHeight="normal"
-              sx={{ textDecorationLine: "underline" }}
+              sx={{ textDecorationLine: "underline",position: 'fixed',bgcolor: "#87CEFA",padding:"10px",
+              bottom: 80,
+              right: 20,
+              zIndex: 999 }}
             >
               ĐĂNG NHẬP
             </Typography>
@@ -122,11 +125,6 @@ const textInter = {
   lineHeight : "normal",
 };
 
-const buttonLogin = {
-  bgcolor: "#B6E2F5",
-  '&:hover':{
-    bgcolor: "red"
-  }
-}
+
 
 export default ClientFooter;

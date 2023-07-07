@@ -21,7 +21,7 @@ const Cards = (props: CardItem) => {
         {props.index === 1 || props.index === 3 || props.index === 5 ? (
           <Card
             sx={{
-              width: 270,
+             
               textAlign: "center",
               height: "300px",
               display: "flex",
@@ -71,7 +71,7 @@ const Cards = (props: CardItem) => {
         ) : (
           <Card
             sx={{
-              width: 270,
+            
               textAlign: "center",
               height: "300px",
               display: "flex",

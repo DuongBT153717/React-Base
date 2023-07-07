@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Card, CardContent,Box } from '@mui/material';
 
-interface IRightCard {
+interface IUnRightCard {
   title: string;
   num: string;
   type: string;
@@ -9,9 +9,9 @@ interface IRightCard {
   index: number;
 }
 
-const RightCard = (props: IRightCard) => {
+const UnRightCard = (props: IUnRightCard) => {
   return (
-    <Card sx={{ml:'10px', width: 300, mt: 2,borderRadius: '20px',backgroundColor:"rgba(255, 255, 255, 0.7)"}}>
+    <Card sx={{ml:'10px', width: 40, mt: 4,borderRadius: '20px',backgroundColor:"rgba(255, 255, 255, 0.7)"}}>
       <CardContent sx={{ display: 'flex',alignItems:'center',mx:'10px',justifyContent:'space-between' }}>
        <Box >
        <Typography sx={{ fontSize: 20,fontWeight:"30px",maxWidth:"100px"}}>
@@ -36,4 +36,4 @@ const RightCard = (props: IRightCard) => {
   );
 };
 
-export default RightCard;
+export default UnRightCard;

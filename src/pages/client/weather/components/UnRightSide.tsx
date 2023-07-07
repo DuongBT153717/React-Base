@@ -1,15 +1,14 @@
 import React from "react";
-import { Box, Stack } from "@mui/material";
-import RightCard from "./RightCard";
+import { Box } from "@mui/material";
+import UnRightCard from "./UnRightCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { rightCard } from "../../../../services/raw_data";
 
-const RightSide = () => {
+const UnRightSide = () => {
   return (
-    <>
     <Swiper
-    spaceBetween={100} // Set the desired spacing between each slide
+      spaceBetween={100} // Set the desired spacing between each slide
       slidesPerView={4}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
@@ -17,7 +16,7 @@ const RightSide = () => {
       {rightCard.map((item, index) => (
         <SwiperSlide key={index}>
           <Box px={2}> {/* Add spacing using Box component with px */}
-            <RightCard
+            <UnRightCard
               title={item.title}
               logo={item.logo}
               num={item.num}
@@ -28,9 +27,7 @@ const RightSide = () => {
         </SwiperSlide>
       ))}
     </Swiper>
-    </>
   );
-  
 };
 
-export default RightSide;
+export default UnRightSide;

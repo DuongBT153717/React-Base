@@ -20,10 +20,10 @@ const Feature = () => {
             top: "50px",
           }}
         >
-          <Typography variant="h3" sx={{ fontSize: 20, mb: 6 }}>
+          <Typography  sx={{ fontSize: 20, mb: 6 }}>
             THỜI GIAN THỰC
           </Typography>
-          <Typography component="p" sx={{ fontSize: 14, px: 2 }}>
+          <Typography  sx={{ fontSize: 14, px: 2 }}>
             Chỉ số sức khỏe môi trường theo không gian và thời gian thực để cung
             cấp thông tin, cảnh báo nhanh cho cộng đồng người dân, các cơ quan
             quản lý, chính quyền.
@@ -40,10 +40,10 @@ const Feature = () => {
             textAlign: "center",
           }}
         >
-          <Typography variant="h3" sx={{ fontSize: 20, mb: 9, mt: 4 }}>
+          <Typography  sx={{ fontSize: 20, mb: 9, mt: 4 }}>
             THÔNG TIN XÁC THỰC
           </Typography>
-          <Typography component="p" sx={{ fontSize: 14, px: 5 }}>
+          <Typography  sx={{ fontSize: 14, px: 5 }}>
             Thông tin, dữ liệu mang tính khoa học cao và độ tin cậy lớn từ các
             cơ quan uy tín, có thẩm quyền trực tiếp. Ngoài ra Website còn được
             Viện Khoa học Khí tượng Thủy Văn& Biến đổi khí hậu trực tiếp giám
@@ -64,10 +64,10 @@ const Feature = () => {
             top: "50px",
           }}
         >
-          <Typography variant="h3" sx={{ fontSize: 20, mb: 6 }}>
+          <Typography  sx={{ fontSize: 20, mb: 6 }}>
             TRUY XUẤT DỮ LIỆU
           </Typography>
-          <Typography component="p" sx={{ fontSize: 14, px: 2 }}>
+          <Typography  sx={{ fontSize: 14, px: 2 }}>
             Thông tin, chỉ số được thể hiện qua dạng chữ và biểu đồ giúp người
             sử dụng có cái nhìn tổng quan và chi tiết về dữ liệu. Dữ liệu dễ
             dàng truy xuất, phục vụ công việc, cá nhân cho người sử dụng.
