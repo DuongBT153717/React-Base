@@ -19,7 +19,6 @@ const ClientWeather = () => {
           <LeftSide />
           <RightSide />
         </Box>
-       
       </Box>
     </>
   );
