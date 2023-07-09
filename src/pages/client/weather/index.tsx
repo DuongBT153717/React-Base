@@ -6,7 +6,7 @@ import Intro from './components/Intro';
 import BG_BODY from '../../../assets/images/bg-body.png';
 import UnRightSide from './components/UnRightSide';
 
-const ClientWeather = () => {
+const ClientHome = () => {
   return (
     <>
       <Intro />
@@ -26,4 +26,4 @@ const ClientWeather = () => {
   );
 };
 
-export default ClientWeather;
+export default ClientHome;

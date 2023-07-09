@@ -5,7 +5,7 @@ import Introduce from './components/Introduce';
 import Supplies from './components/Supplies';
 import BG_BODY from '../../../assets/images/bg-body.png'
 
-const ClientHome = () => {
+const ClientIntro = () => {
   return (
     <>
       <Hero />
@@ -18,4 +18,4 @@ const ClientHome = () => {
   );
 };
 
-export default ClientHome;
+export default ClientIntro;
