@@ -8,6 +8,10 @@ import UV from '../assets/images/UV.png';
 import OZON from '../assets/images/OZON.png';
 import ACID from '../assets/images/ACID.png';
 import AIR from '../assets/images/AIR.png';
+import CLOUD from '../assets/images/weather-page/cloud.png';
+import RAIN_WEATHER from '../assets/images/weather-page/rain.png';
+import RAIN_THUNDER from '../assets/images/weather-page/rain_thunder.png';
+
 export const homeSupplies = [
     {
         logo: SUN_FILL,
@@ -122,7 +126,58 @@ export const leftCard = [
 
  ]
 
-
+ export const hourTemp = [
+    {
+        time: '01:00',
+        img: CLOUD,
+        degree: '38°'
+    },
+    {
+        time: '02:00',
+        img: RAIN_THUNDER,
+        degree: '38°'
+    },
+    {
+        time: '03:00',
+        img: RAIN_WEATHER,
+        degree: '38°'
+    },
+    {
+        time: '07:00',
+        img: RAIN_THUNDER,
+        degree: '38°'
+    },
+    {
+        time: '05:00',
+        img: CLOUD,
+        degree: '38°'
+    },
+    {
+        time: '07:00',
+        img: RAIN_THUNDER,
+        degree: '38°'
+    },
+    {
+        time: '07:00',
+        img: RAIN_THUNDER,
+        degree: '38°'
+    },
+    {
+        time: '08:00',
+        img: RAIN_THUNDER,
+        degree: '38°'
+    },
+    {
+        time: '09:00',
+        img: RAIN_THUNDER,
+        degree: '38°'
+    },
+    {
+        time: '10:00',
+        img: RAIN_THUNDER,
+        degree: '38°'
+    },
+]
 
 
  

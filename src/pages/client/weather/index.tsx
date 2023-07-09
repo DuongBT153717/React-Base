@@ -4,9 +4,8 @@ import LeftSide from './components/LeftSide';
 import RightSide from './components/RightSide';
 import Intro from './components/Intro';
 import BG_BODY from '../../../assets/images/bg-body.png';
-import UnRightSide from './components/UnRightSide';
 
-const ClientHome = () => {
+const ClientWeather = () => {
   return (
     <>
       <Intro />
@@ -26,4 +25,4 @@ const ClientHome = () => {
   );
 };
 
-export default ClientHome;
+export default ClientWeather;
