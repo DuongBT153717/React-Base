@@ -16,7 +16,7 @@ function App() {
             <Route path="/client" element={<ClientLayout />}>
               <Route index={true} path="intro" element={<ClientIntro />} />
               <Route path="contact" element={<ClientContact />} />
-              <Route path="weather" element={<ClientHome />} />
+              <Route path="home" element={<ClientHome />} />
             </Route>
             <Route path="admin" element={<AdminHome />} />
           </Routes>
