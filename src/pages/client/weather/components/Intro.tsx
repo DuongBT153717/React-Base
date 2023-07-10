@@ -4,11 +4,10 @@ import { Box, Typography } from "@mui/material";
 const Intro = () => {
   return (
     <Box
-      width="208vh"
-      height="88vh"
       sx={{
-        position: "relative",
-       
+        bgcolor: '#fff',
+        height: '70vh',
+        mt: 5,
       }}
     >
       <Box
