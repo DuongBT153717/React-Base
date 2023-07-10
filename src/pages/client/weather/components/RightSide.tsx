@@ -9,7 +9,7 @@ const RightSide = () => {
   return (
     <>
     <Swiper
-   
+    spaceBetween={50} // Set the desired spacing between each slide
       slidesPerView={4}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
@@ -28,9 +28,7 @@ const RightSide = () => {
         </SwiperSlide>
       ))}
     </Swiper>
-    
     </>
-    
   );
   
 };
