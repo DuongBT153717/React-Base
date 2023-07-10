@@ -1,23 +1,23 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, CardMedia, Typography, Card } from "@mui/material";
 
 const Intro = () => {
   return (
     <Box
       sx={{
-        bgcolor: '#fff',
-        height: '70vh',
+        bgcolor: "#fff",
+        height: "85vh",
         mt: 5,
       }}
     >
-      <Box
-        position="absolute"
-        top={0}
-        left={0}
-        right={0}
-        bottom={0}
-      >
-      </Box>
+      <Card sx={{height: '100%'}}>
+        <CardMedia
+          component="iframe"
+          image="https://www.youtube.com/embed/muuK4SpRR5M"
+          sx={{height: '100%'}}
+          
+        />
+      </Card>
     </Box>
   );
 };

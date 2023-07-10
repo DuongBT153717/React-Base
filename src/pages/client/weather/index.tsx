@@ -18,17 +18,6 @@ const ClientWeather = () => {
       >
         <Box sx={{maxWidth: '1800px', m: '0 auto', padding: '0 20px',}}>
           <Intro />
-          <Typography
-            sx={{
-              fontSize: "30px",
-              ml: "210px",
-              mt: "20px",
-              fontWeight: "20px",
-              color: "#003B72",
-            }}
-          >
-            DỰ BÁO CHI TIẾT
-          </Typography>
           <Box display="flex" gap="35px">
             <LeftSide />
             <RightSide />

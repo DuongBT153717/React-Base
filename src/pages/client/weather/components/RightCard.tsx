@@ -11,10 +11,10 @@ interface IRightCard {
 
 const RightCard = (props: IRightCard) => {
   return (
-    <Card sx={{ml:'10px', width: 300, mt: 2,borderRadius: '20px',backgroundColor:"rgba(255, 255, 255, 0.7)"}}>
+    <Card sx={{ mt: 2,borderRadius: '20px',backgroundColor:"rgba(255, 255, 255, 0.7)"}}>
       <CardContent sx={{ display: 'flex',alignItems:'center',mx:'10px',justifyContent:'space-between' }}>
        <Box >
-       <Typography sx={{ fontSize: 20,fontWeight:"30px",maxWidth:"100px"}}>
+       <Typography sx={{ fontSize: 18,fontWeight:"30px",maxWidth:"100px"}}>
           {props.title}
         </Typography>
         <Typography  color="text.secondary">
