@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, CardMedia, Typography, Card } from "@mui/material";
+import Video from "../intro2.mp4"
 
 const Intro = () => {
   return (
@@ -12,9 +13,12 @@ const Intro = () => {
     >
       <Card sx={{height: '100%'}}>
         <CardMedia
-          component="iframe"
-          image="https://www.youtube.com/embed/muuK4SpRR5M"
-          sx={{height: '100%'}}
+          component="video"
+          src={Video}
+          autoPlay
+          loop
+          muted
+          sx={{height: '100%',objectFit:'cover'}}
           
         />
       </Card>
