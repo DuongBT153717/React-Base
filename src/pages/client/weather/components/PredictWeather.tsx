@@ -7,7 +7,7 @@ import RightCard from './RightCard';
 const PredictWeather = () => {
   return (
     <>
-        <Box>
+        <Box >
         <Typography
           sx={{
             fontSize: "30px",

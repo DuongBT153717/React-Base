@@ -8,7 +8,7 @@ const HourTemp = () => {
   return (
     <Box mt={6} display="flex" gap={3}>
       <img src={HOUR_ICON} alt="" />
-      <Box width="calc(100% - 265px)" bgcolor="#fff" borderRadius="20px">
+      <Box width="calc(100% - 265px)" bgcolor="rgba(255, 255, 255, 0.7)" borderRadius="20px">
         <Swiper
           slidesPerView={7}
           spaceBetween={50}

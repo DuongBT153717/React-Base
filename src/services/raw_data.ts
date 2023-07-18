@@ -178,6 +178,12 @@ export const leftCard = [
         degree: '38°'
     },
 ]
+export const newsMain =[
+    {
+title: 'Ngay 18/07/2023 sieu bao the gioi do cap vao viet nam,khuyen cao nguoi dan khong ra khoi duong'
+    }
+]
+
 
 
  
