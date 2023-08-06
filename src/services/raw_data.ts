@@ -11,6 +11,7 @@ import AIR from '../assets/images/AIR.png';
 import CLOUD from '../assets/images/weather-page/cloud.png';
 import RAIN_WEATHER from '../assets/images/weather-page/rain.png';
 import RAIN_THUNDER from '../assets/images/weather-page/rain_thunder.png';
+import NEW_S from '../assets/images/newss.png'
 
 export const homeSupplies = [
     {
@@ -180,9 +181,15 @@ export const leftCard = [
 ]
 export const newsMain =[
     {
-title: 'Ngay 18/07/2023 sieu bao the gioi do cap vao viet nam,khuyen cao nguoi dan khong ra khoi duong'
-    }
-]
+title: 'Ngay 18/07/2023 sieu bao the gioi do cap vao viet nam,khuyen cao nguoi dan khong ra khoi duong',
+img: NEW_S
+    },
+    {
+        title: 'Ngay 20/02/2034 đong đất núi lửa siêu to khổng lồ ,yêu cầu không ra ngoài nha',
+        img: NEW_S
+            },
+        ]
+
 
 
 

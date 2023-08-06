@@ -1,29 +1,42 @@
-import { Box, Stack, Typography, Container, Button } from "@mui/material";
-import PICTURE from "../Rectangle 112.png";
+import React from "react";
+import { Box, Stack, Typography, Container } from "@mui/material";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { newsMain } from "../../../../services/raw_data";
+import NewsTitle from "./NewsTitle";
 
 const News = () => {
   return (
-    <Box display="flex" borderRadius="8px">
-      <Box sx={{ flex: 1 }} bgcolor="rgba(255, 255, 255, 0.7)" mt="30px" padding="40px" borderRadius="8px">
-        <Container maxWidth="lg">
+    <Box display="flex">
+      <Box sx={{ flex: 2 }} mt="-70px" padding="40px" ml="-500px" >
+        <Container maxWidth="sm">
           <Stack direction="column">
-            <Box display="flex" alignItems="flex-start" mt="-30px" paddingTop="40px">
-              {/* Picture card */}
-              <Box sx={{ width: "500px", borderRadius: "10px", marginRight: "20px" }}>
-                <img src={PICTURE} alt="Your Image" style={{ width: "100%", borderRadius: "10px" }} />
+            <Box display="flex" justifyContent="flex-start" mt="70px" > {/* Change justifyContent to flex-start */}
+              <Box
+                sx={{
+                  bgcolor: "rgba(255, 255, 255, 0.7)",
+                  border: '1px solid #ccc',
+                  borderRadius: '8px',
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  mt: "0px",
+                  width: "100%",
+                }}
+              >
+                <Swiper    
+                  spaceBetween={30}
+                  slidesPerView="auto"
+                >
+                  {newsMain.map((item, index) => (
+                    <SwiperSlide key={index}>
+                      <NewsTitle
+                        img={item.img}
+                        title={item.title}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </Box>
-              {/* Typography */}
-              <Box>     
-              </Box>
-            </Box>
-            <Box mt="20px">
-              {/* Additional content */}
-              <Typography>
-              {newsMain.map((item)=> (
-                item.title
-              ))}
-              </Typography>
             </Box>
           </Stack>
         </Container>

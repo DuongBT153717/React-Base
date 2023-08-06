@@ -8,6 +8,7 @@ const Intro = () => {
       sx={{
         bgcolor: "#fff",
         height: "85vh",
+        minHeight: "300px",
         mt: 5,
       }}
     >
@@ -18,8 +19,11 @@ const Intro = () => {
           autoPlay
           loop
           muted
-          sx={{height: '100%',objectFit:'cover'}}
-          
+          sx={{height: '100%',objectFit:'cover',
+          top: 0,
+          left: 0,
+          width: "100%",
+         }}
         />
       </Card>
     </Box>

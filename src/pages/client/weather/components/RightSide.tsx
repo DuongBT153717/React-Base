@@ -6,7 +6,7 @@ import News from "./News";
 
 const RightSide = () => {
   return (
-    <Stack direction="column" width="calc(100% - 185px)">
+    <Stack direction="column" width="calc(100% - 225px)">
       <PredictWeather />
       <HourTemp />
       <News />
