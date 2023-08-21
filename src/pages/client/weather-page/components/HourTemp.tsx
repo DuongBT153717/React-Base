@@ -1,11 +1,11 @@
 import { Chip, Stack, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
-import { hourTemp } from "../../../../services/raw_data";
-import useBackGround from "../../../../hooks/useBackGround";
-import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import useBackGround from "../../../../hooks/useBackGround";
+import { hourTemp } from "../../../../services/raw_data";
 const HourTemp = () => {
   
   const theme = useTheme();
@@ -126,11 +126,6 @@ const HourTemp = () => {
   );
 };
 
-const typoDesc = {
-  fontSize: "35px",
-  color: "#003B72",
-  fontWeight: "700",
-  lineHeight: "normal",
-};
+
 
 export default HourTemp;

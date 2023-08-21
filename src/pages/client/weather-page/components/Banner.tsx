@@ -1,9 +1,8 @@
-import React from "react";
+import { Box, Typography } from "@mui/material";
 import BANNER_BG from "../../../../assets/images/bg-banner-weather.png";
 import MARK from "../../../../assets/images/mark.png";
-import SUN_FILL from "../../../../assets/images/weather-page/sun_color.png";
 import RAIN_FILL from "../../../../assets/images/weather-page/rain_color.png";
-import { Box, Typography } from "@mui/material";
+import SUN_FILL from "../../../../assets/images/weather-page/sun_color.png";
 const Banner = () => {
   return (
     <Box

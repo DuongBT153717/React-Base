@@ -1,5 +1,4 @@
-import React from 'react'
-import { Typography, Card, CardContent, Button, CardActions } from '@mui/material';
+import { Button, Card, CardActions, CardContent, Typography } from '@mui/material';
 const RightCard = () => {
   return (
     <Card sx={{ width: 320, mt: 4, height: 150 }}>

@@ -1,6 +1,5 @@
-interface AdminHomeProps {}
 
-const AdminHome = (props: AdminHomeProps) => {
+const AdminHome = () => {
   return <>AdminHome</>;
 };
 

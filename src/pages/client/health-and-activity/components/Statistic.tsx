@@ -1,5 +1,4 @@
-import { Box, Typography, Stack, useTheme } from "@mui/material";
-import React from "react";
+import { Box, Stack, Typography, useTheme } from "@mui/material";
 import { CircularProgressbar } from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 import ChangingProgressProvider from "../../../../utils/ChangingProgressProvider";

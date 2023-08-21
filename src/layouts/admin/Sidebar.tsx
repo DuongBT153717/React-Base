@@ -1,13 +1,12 @@
-import { Box, IconButton, Typography } from "@mui/material";
-import React, { useState } from "react";
-import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import SourceIcon from "@mui/icons-material/Source";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
-import StyleIcon from "@mui/icons-material/Style";
+import DashboardIcon from "@mui/icons-material/Dashboard";
 import MenuIcon from "@mui/icons-material/Menu";
-import USERICON from "../../assets/images/user.png";
+import SourceIcon from "@mui/icons-material/Source";
+import StyleIcon from "@mui/icons-material/Style";
+import { Box, IconButton, Typography } from "@mui/material";
+import { Menu, MenuItem, Sidebar, useProSidebar } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
+import USERICON from "../../assets/images/user.png";
 const SidebarAdmin = () => {
   const { collapseSidebar, toggleSidebar, broken, collapsed } = useProSidebar();
   return (

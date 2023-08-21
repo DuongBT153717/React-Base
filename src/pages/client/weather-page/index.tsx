@@ -1,12 +1,11 @@
-import { Box, Container } from '@mui/material'
-import React from 'react'
-import Banner from './components/Banner'
-import HourTemp from './components/HourTemp'
+import { Box } from '@mui/material'
 import BG_BODY from '../../../assets/images/bg-body.png'
 import BG_BODY_DARK from '../../../assets/images/bg-dark.jpg'
-import RainChart from './components/RainChart'
-import { Content } from './components/Content'
 import useBackGround from '../../../hooks/useBackGround'
+import Banner from './components/Banner'
+import { Content } from './components/Content'
+import HourTemp from './components/HourTemp'
+import RainChart from './components/RainChart'
 const ClientWeather = () => {
   const isLight = useBackGround()
   return (

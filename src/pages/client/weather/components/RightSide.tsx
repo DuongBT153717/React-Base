@@ -1,8 +1,6 @@
-import React from "react";
-import { Box, Stack } from "@mui/material";
-import RightCard from "./RightCard";
-import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import RightCard from "./RightCard";
 const RightSide = () => {
   return (
       <Swiper

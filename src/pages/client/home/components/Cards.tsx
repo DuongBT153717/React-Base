@@ -1,10 +1,9 @@
-import React from "react";
 import {
-  Grid,
   Button,
-  Typography,
-  CardMedia,
   Card,
+  CardMedia,
+  Grid,
+  Typography,
   useTheme,
 } from "@mui/material";
 interface CardItem {

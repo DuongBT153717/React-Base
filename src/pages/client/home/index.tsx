@@ -1,11 +1,11 @@
-import { Typography, Box, Container } from "@mui/material";
-import Hero from "./components/Hero";
+import { Box, Container } from "@mui/material";
+import BG_BODY from "../../../assets/images/bg-body.png";
+import BG_BODY_DARK from '../../../assets/images/bg-dark.jpg';
+import useBackGround from "../../../hooks/useBackGround";
 import Feature from "./components/Feature";
+import Hero from "./components/Hero";
 import Introduce from "./components/Introduce";
 import Supplies from "./components/Supplies";
-import BG_BODY from "../../../assets/images/bg-body.png";
-import useBackGround from "../../../hooks/useBackGround";
-import BG_BODY_DARK from '../../../assets/images/bg-dark.jpg' 
 const ClientIntro = () => {
   const isLight = useBackGround()
   return (

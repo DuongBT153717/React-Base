@@ -1,7 +1,6 @@
-import React from "react";
-import { Stack, Box, Typography, Button, Divider } from "@mui/material";
-import LOGOBRAND from "../../assets/images/logo.png";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import LOGOBRAND from "../../assets/images/logo.png";
 const ClientFooter = () => {
   return (
     <>

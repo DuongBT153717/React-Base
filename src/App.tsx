@@ -1,21 +1,20 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { RootProvider } from "./contexts/RootContext";
-import ClientHome from "./pages/client/home";
-import AdminHome from "./pages/admin/home";
-import ClientLayout from "./layouts/client";
-import ClientContact from "./pages/client/contact";
-import ClientHomePage from "./pages/client/weather";
-import ClientIntro from "./pages/client/home";
-import ClientWeather from "./pages/client/weather-page";
 import { ThemeProvider } from "@mui/material";
 import { useEffect, useState } from "react";
-import { LightTheme, darkTheme } from "./themes/theme";
-import './App.css'
-import ClientHealthAndActivity from "./pages/client/health-and-activity";
+import { ProSidebarProvider } from "react-pro-sidebar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import './App.css';
+import { RootProvider } from "./contexts/RootContext";
+import AdminLayout from "./layouts/admin";
+import ClientLayout from "./layouts/client";
+import AdminHome from "./pages/admin/home";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
-import AdminLayout from "./layouts/admin";
-import { ProSidebarProvider  } from "react-pro-sidebar";
+import ClientContact from "./pages/client/contact";
+import ClientHealthAndActivity from "./pages/client/health-and-activity";
+import ClientIntro from "./pages/client/home";
+import ClientHomePage from "./pages/client/weather";
+import ClientWeather from "./pages/client/weather-page";
+import { LightTheme, darkTheme } from "./themes/theme";
 function App() {
   const [theme, setTheme] = useState(darkTheme);
 

@@ -1,8 +1,7 @@
-import React from "react";
 import { Box } from "@mui/material";
+import Intro from "./components/Intro";
 import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
-import Intro from "./components/Intro";
 
 const ClientHomePage = () => {
   return (

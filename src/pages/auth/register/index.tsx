@@ -34,7 +34,7 @@ interface ILevel {
 }
 
 export default function Register() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const [level, setLevel] = useState<ILevel>();
   const changePassword = (value: string) => {
     const temp = strengthIndicator(value);
@@ -46,11 +46,11 @@ export default function Register() {
   }, []);
   const navigate = useNavigate();
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    setOpen(true);
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-  };
+  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  //   setOpen(true);
+  //   event.preventDefault();
+  //   const data = new FormData(event.currentTarget);
+  // };
 
   return (
     <>
@@ -102,7 +102,7 @@ export default function Register() {
                     <Box
                       component="form"
                       noValidate
-                      onSubmit={handleSubmit}
+                      // onSubmit={handleSubmit}
                       sx={{ mt: 2 }}
                     >
                       <Grid container spacing={1}>

@@ -1,6 +1,6 @@
-import React from "react";
-import LeftCard from "./LeftCard";
+
 import { Stack } from '@mui/material';
+import LeftCard from "./LeftCard";
 
 const LeftSide = () => {
   return (

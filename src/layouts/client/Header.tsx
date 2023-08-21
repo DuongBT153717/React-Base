@@ -1,24 +1,22 @@
+import MenuIcon from "@mui/icons-material/Menu";
 import {
-  useMediaQuery,
   AppBar,
   Box,
   Button,
-  Toolbar,
-  Typography,
   Divider,
+  Drawer,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  Drawer,
+  Toolbar,
+  Typography
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import LOGOBRAND from "../../assets/images/logo.png";
-import { createBreakpoints } from "@mui/system";
-import React from "react";
-const breakpoints = createBreakpoints({});
+
 
 const ClientHeader = () => {
   const navItems = [

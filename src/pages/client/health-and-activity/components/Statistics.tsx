@@ -1,6 +1,5 @@
-import React from "react";
-import { Statistic } from "./Statistic";
 import { Box } from "@mui/material";
+import { Statistic } from "./Statistic";
 
 const Statistics = () => {
   return (

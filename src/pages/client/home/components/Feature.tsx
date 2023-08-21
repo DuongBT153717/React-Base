@@ -1,7 +1,6 @@
 
-import { Paper, Stack, Container, Typography, useTheme } from "@mui/material";
+import { Container, Paper, Stack, Typography } from "@mui/material";
 const Feature = () => {
-  const theme = useTheme();
   return (
     <Container
       maxWidth="lg"

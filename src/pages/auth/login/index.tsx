@@ -1,4 +1,7 @@
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { IconButton } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -6,7 +9,6 @@ import Checkbox from "@mui/material/Checkbox";
 import Container from "@mui/material/Container";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Grid from "@mui/material/Grid";
-import Slide from "@mui/material/Slide";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
@@ -14,9 +16,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import bgimg from "./bg/backimg.jpg";
 import bg from "./bg/signin.svg";
-import { IconButton } from "@mui/material";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 const boxstyle = {
   position: "absolute",
   top: "50%",
@@ -29,7 +28,7 @@ const boxstyle = {
 };
 
 export default function Login() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const [remember, setRemember] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => {
@@ -37,11 +36,11 @@ export default function Login() {
   };
   const navigate = useNavigate();
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    setOpen(true);
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-  };
+  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  //   setOpen(true);
+  //   event.preventDefault();
+  //   const data = new FormData(event.currentTarget);
+  // };
 
   return (
     <>
@@ -93,7 +92,7 @@ export default function Login() {
                     <Box
                       component="form"
                       noValidate
-                      onSubmit={handleSubmit}
+                      // onSubmit={handleSubmit}
                       sx={{ mt: 2 }}
                     >
                       <Grid container spacing={1}>

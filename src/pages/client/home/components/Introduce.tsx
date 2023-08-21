@@ -1,5 +1,4 @@
-import React from "react";
-import { Box, Stack, Typography, Container, Button } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import PERSON from "../../../../assets/images/person.png";
 const Introduce = () => {
   return (

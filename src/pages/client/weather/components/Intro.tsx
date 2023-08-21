@@ -1,5 +1,4 @@
-import React from 'react'
-import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Box, Card, CardMedia } from '@mui/material';
 const Intro = () => {
   return (
     <Box mt={2}
