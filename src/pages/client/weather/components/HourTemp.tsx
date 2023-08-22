@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, Stack, Chip } from "@mui/material";
-import HOUR_ICON from "../../../../assets/images/hour_icon.png";
+import HOUR_ICON from "../../../../assets/images/home-page/hour_icon.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { hourTemp } from "../../../../services/raw_data";

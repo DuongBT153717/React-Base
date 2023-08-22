@@ -3,15 +3,15 @@ import WIND from '../assets/images/wind.png';
 import RAIN_FILL from '../assets/images/rain_fill.png';
 import SUN from '../assets/images/sun.png';
 import RAIN from '../assets/images/rain.png';
-import RAINHOME from '../assets/images/RAINHOME.png';
-import UV from '../assets/images/UV.png';
-import OZON from '../assets/images/OZON.png';
-import ACID from '../assets/images/ACID.png';
-import AIR from '../assets/images/AIR.png';
+import RAINHOME from '../assets/images/home-page/RAINHOME.png';
+import UV from '../assets/images/home-page/UV.png';
+import OZON from '../assets/images/home-page/OZON.png';
+import ACID from '../assets/images/home-page/ACID.png';
+import AIR from '../assets/images/home-page/AIR.png';
 import CLOUD from '../assets/images/weather-page/cloud.png';
 import RAIN_WEATHER from '../assets/images/weather-page/rain.png';
 import RAIN_THUNDER from '../assets/images/weather-page/rain_thunder.png';
-import NEW_S from '../assets/images/newss.png'
+import NEW_S from '../assets/images/home-page/newss.png'
 
 export const homeSupplies = [
     {
