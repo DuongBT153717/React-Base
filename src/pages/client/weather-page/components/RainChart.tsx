@@ -61,6 +61,8 @@ import Tab from "@mui/material/Tab";
 
 const RainChart = () => {
   const theme = useTheme();
+
+
   // const renderChart = () => {
   //   if (activeChart === "luongMua") {
   //     return <Bar style={{ padding: "30px" }} options={options} data={luongMuaData} />;
