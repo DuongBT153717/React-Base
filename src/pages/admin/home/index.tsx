@@ -1,6 +1,8 @@
 
 const AdminHome = () => {
-  return <>AdminHome</>;
-};
+  return (
+    <div>AdminHome</div>
+  )
+}
 
-export default AdminHome;
+export default AdminHome

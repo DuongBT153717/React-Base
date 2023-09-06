@@ -1,5 +1,4 @@
-import React from 'react';
-import { Typography, Card, CardContent,Box,useTheme } from '@mui/material';
+import { Box, Card, CardContent, Typography, useTheme } from '@mui/material';
 
 
 interface IRightCard {

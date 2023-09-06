@@ -1,20 +1,18 @@
 import {
   Box,
   Button,
-  Card,
   CardContent,
   Grid,
   TextField,
   Typography,
 } from "@mui/material";
 import BG_BODY from "../../../assets/images/bg-body.png";
-import useBackGround from "../../../hooks/useBackGround";
 import ENVELOP from "../../../assets/images/contact/envelop.png";
 import PHONE from "../../../assets/images/contact/phone.png";
 import FB from "../../../assets/images/contact/fb.png";
 import LOCATION from "../../../assets/images/contact/location.png";
 const ClientContact = () => {
-  const isLight = useBackGround();
+  
   return (
     <Box
       sx={{

@@ -1,5 +1,6 @@
 import { PaletteMode } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
+import { viVN } from '@mui/material/locale';
 import type {} from '@mui/lab/themeAugmentation';
 
 declare module "@mui/material/styles" {
@@ -29,7 +30,7 @@ export const LightTheme = createTheme({
     allVariants: {
       fontFamily: `'Inter', sans-serif;`,
       textTransform: "none",
-      fontSize: 15,
+      fontSize: 13,
       fontWeight: 700,
       lineHeight: 1.2,
     },
@@ -65,14 +66,14 @@ export const LightTheme = createTheme({
       },
     }
   },
-});
+}, viVN);
 
 export const darkTheme = createTheme({
   typography: {
     allVariants: {
       fontFamily: `'Inter', sans-serif;`,
       textTransform: "none",
-      fontSize: 15,
+      fontSize: 13,
       fontWeight: 700,
       lineHeight: 1.2,
     },

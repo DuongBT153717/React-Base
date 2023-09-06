@@ -1,10 +1,9 @@
-import React from 'react';
-import { Box, Typography, Grid } from '@mui/material';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Box, Typography } from '@mui/material';
 import 'swiper/css';
+import { FreeMode } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { rightCard } from '../../../../services/raw_data';
 import RightCard from './RightCard';
-import { FreeMode } from 'swiper/modules';
 
 const PredictWeather = () => {
   return (

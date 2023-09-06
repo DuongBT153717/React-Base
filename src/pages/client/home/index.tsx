@@ -13,7 +13,7 @@ const ClientIntro = () => {
       <Hero />
       <Box
         sx={{
-          backgroundImage: isLight? `url(${BG_BODY})`: `url(${BG_BODY_DARK})`,
+          backgroundImage:`url(${BG_BODY})`,
           width: "100%",
           backgroundPosition: "center",
         }}

@@ -7,6 +7,7 @@ import { Box, IconButton, Typography } from "@mui/material";
 import { Menu, MenuItem, Sidebar, useProSidebar } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import USERICON from "../../assets/images/user.png";
+import SettingsIcon from '@mui/icons-material/Settings';
 const SidebarAdmin = () => {
   const { collapseSidebar, toggleSidebar, broken, collapsed } = useProSidebar();
   return (
@@ -15,10 +16,11 @@ const SidebarAdmin = () => {
         style={{
           height: "100%",
           top: "auto",
-          border: 0
+          border: 0,
+          
         }}
         breakPoint="md"
-        backgroundColor="#1F2A40"
+        backgroundColor="#fff"
       >
         <Box
           display="flex"
@@ -28,7 +30,7 @@ const SidebarAdmin = () => {
           mb="25px"
         >
           {!collapsed ? (
-            <Typography variant="h3" color="#fff">
+            <Typography variant="h3" color="#000">
               ADMINIS
             </Typography>
           ) : null}
@@ -36,6 +38,7 @@ const SidebarAdmin = () => {
             onClick={() => {
               broken ? toggleSidebar() : collapseSidebar();
             }}
+            sx={{color: 'rgb(94, 53, 177)'}} 
           >
             <MenuIcon />
           </IconButton>
@@ -58,12 +61,12 @@ const SidebarAdmin = () => {
           </Box>
           <Box textAlign="center">
             {!collapsed ? (
-              <Typography color="#fff" sx={{ m: "10px 0 0 0" }}>
+              <Typography color="#000" sx={{ m: "10px 0 10px 0", fontSize: '20px', fontWeight: '700' }}>
                 Ed Roh
               </Typography>
             ) : null}
             {!collapsed ? (
-              <Typography variant="h5" color="#fff">
+              <Typography variant="h5" color="#000">
                 VP Fancy Admin
               </Typography>
             ) : null}
@@ -74,8 +77,19 @@ const SidebarAdmin = () => {
             button: ({ active }) => {
               return {
                 backgroundColor: active ? "#fff" : undefined,
+                color: '#000',
+                '&:hover': {
+                  backgroundColor: 'rgb(237, 231, 246)',
+                  color: 'rgb(94, 53, 177)',
+                  borderRadius: '10px',
+                  paddingLeft: '5px',
+                  paddingRight: '5px',
+                  marginLeft: '10px',
+                  marginRight: '10px',
+               },
               };
             },
+            
           }}
         >
           <MenuItem
@@ -88,13 +102,14 @@ const SidebarAdmin = () => {
           </MenuItem>
           <MenuItem
             icon={<SourceIcon />}
-            component={<Link to="/admin/content" />}
+            component={<Link to="/admin/contact" />}
           >
             {" "}
-            Content{" "}
+            Contact{" "}
           </MenuItem>
           <MenuItem icon={<AnalyticsIcon />}> Analytics </MenuItem>
-          <MenuItem icon={<StyleIcon />}> Customization </MenuItem>
+          <MenuItem icon={<StyleIcon />} component={<Link to="/admin/profile" />}> Profile </MenuItem>
+          <MenuItem icon={<SettingsIcon />} component={<Link to="/admin/changepassword" />}> Change Password </MenuItem>
         </Menu>
       </Sidebar>
     </>

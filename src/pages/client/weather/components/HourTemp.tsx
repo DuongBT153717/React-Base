@@ -1,10 +1,9 @@
-import React from "react";
-import { Box, Typography, Stack, Chip } from "@mui/material";
-import HOUR_ICON from "../../../../assets/images/home-page/hour_icon.png";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Box, Chip, Stack, Typography } from "@mui/material";
 import "swiper/css";
-import { hourTemp1 } from "../../../../services/raw_data";
 import { FreeMode } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import HOUR_ICON from "../../../../assets/images/home-page/hour_icon.png";
+import { hourTemp1 } from "../../../../services/raw_data";
 const HourTemp = () => {
   return (
     <Box mt='30px' display="flex" gap={3}>

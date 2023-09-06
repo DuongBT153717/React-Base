@@ -1,23 +1,11 @@
-import React from "react";
-import { Box, Button, Typography } from "@mui/material";
-import { styled } from "@mui/system";
+import { Box, Typography } from "@mui/material";
 
 interface SwiperNews {
   title: string;
   img: string;
 }
 
-const StyledButton = styled(Button)({
-  background: "#1976D2",
-  color: "white",
-  borderRadius: "20px",
-  fontWeight: "bold",
-  fontSize: "14px",
-  transition: "background 0.3s, color 0.3s",
-  "&:hover": {
-    background: "#1976D2", 
-  },
-});
+
 
 const NewsTitle = (props: SwiperNews) => {
   return (

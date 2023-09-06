@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 import BG_BODY from "../../../assets/images/bg-body.png";
 import BG_BODY_DARK from "../../../assets/images/bg-dark.jpg";
 import useBackGround from "../../../hooks/useBackGround";
@@ -10,7 +10,7 @@ export const ClientPredictWeather = () => {
   return (
     <Box
       sx={{
-        backgroundImage: isLight ? `url(${BG_BODY})` : `url(${BG_BODY_DARK})`,
+        backgroundImage:`url(${BG_BODY})`,
         width: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

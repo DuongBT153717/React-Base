@@ -1,49 +1,27 @@
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import Avatar from "@mui/material/Avatar";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import {
+  IconButton,
+  Link
+} from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import FormControl from "@mui/material/FormControl";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import bgimg from "./bg/backimg.jpg";
-import bg from "./bg/signin.svg";
-import {
-  strengthColor,
-  strengthIndicator,
-} from "../../../utils/password-strength";
+import bg from "./../../../assets/images/auth/bg.png";
 
-const boxstyle = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "75%",
-  height: "70%",
-  bgcolor: "background.paper",
-  boxShadow: 24,
-};
-
-interface ILevel {
-  color: string;
-  label: string;
-}
 
 export default function Register() {
   // const [open, setOpen] = useState(false);
-  const [level, setLevel] = useState<ILevel>();
-  const changePassword = (value: string) => {
-    const temp = strengthIndicator(value);
-    setLevel(strengthColor(temp));
+  const [remember, setRemember] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const handleClickShowPassword = () => {
+    setShowPassword(!showPassword);
   };
-
-  useEffect(() => {
-    changePassword("");
-  }, []);
   const navigate = useNavigate();
 
   // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -54,166 +32,138 @@ export default function Register() {
 
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${bgimg})`,
-          backgroundSize: "cover",
-          height: "100vh",
-          color: "#f5f5f5",
+      <Box
+        sx={{
+          display: "flex",
+          flex: "1 1 auto",
+          height: '100vh'
         }}
       >
-        <Box sx={boxstyle}>
-          <Grid container>
-            <Grid item xs={12} sm={12} lg={6}>
+        <Grid container sx={{ flex: "1 1 auto" }}>
+          <Grid
+            xs={12}
+            lg={6}
+            sx={{
+              backgroundColor: "background.paper",
+              display: "flex",
+              flexDirection: "column",
+              position: "relative",
+            }}
+          >
+            <Box
+              sx={{
+                backgroundColor: "background.paper",
+                flex: "1 1 auto",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Box
                 sx={{
-                  backgroundImage: `url(${bg})`,
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                  height: "63vh",
-                  backgroundPosition: "center",
-                  color: "#f5f5f5",
-                }}
-              ></Box>
-            </Grid>
-            <Grid item xs={12} sm={12} lg={6}>
-              <Box
-                style={{
-                  backgroundSize: "cover",
-                  height: "70vh",
-                  minHeight: "500px",
-                  backgroundColor: "#3b33d5",
+                  maxWidth: 550,
+                  px: 3,
+                  py: "100px",
+                  width: "100%",
                 }}
               >
-                <Container>
-                  <Box pt={5}>
-                    <Box
+                <div>
+                  <Stack spacing={1} sx={{ mb: 3 }}>
+                    <Typography sx={{ fontSize: "35px", fontWeight: "700" }}>
+                      Đăng kí
+                    </Typography>
+                    <Typography color="text.secondary" fontSize="15px">
+                      Đã có tài khoản?&nbsp;
+                      <Link
+                        sx={{ fontSize: "15px", color: "rgb(99, 102, 241)" }}
+                        href="/login"
+                        underline="hover"
+                        variant="subtitle2"
+                      >
+                        Đăng nhập
+                      </Link>
+                    </Typography>
+                  </Stack>
+                  <form noValidate>
+                    <Stack spacing={3}>
+                    <TextField
+                        fullWidth
+                        label="Tên tài khoản"
+                        name="name"
+                        type="text"
+                      />
+                      <TextField
+                        fullWidth
+                        label="Địa chỉ Email"
+                        name="email"
+                        type="email"
+                      />
+                      <TextField
+                        required
+                        fullWidth
+                        name="Mật khẩu"
+                        label="Password"
+                        type={showPassword ? "text" : "password"}
+                        id="password"
+                        autoComplete="new-password"
+                        InputProps={{
+                          endAdornment: (
+                            <IconButton
+                              aria-label="toggle password visibility"
+                              edge="end"
+                              onClick={handleClickShowPassword}
+                              size="large"
+                            >
+                              {showPassword ? (
+                                <VisibilityIcon />
+                              ) : (
+                                <VisibilityOffIcon />
+                              )}
+                            </IconButton>
+                          ),
+                        }}
+                      />
+                    </Stack>
+                    <Button
+                      fullWidth
+                      size="large"
                       sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        flexDirection: "column",
+                        mt: 2,
+                        bgcolor: "rgb(99, 102, 241)",
+                        p: "11px 24px",
+                        borderRadius: "12px",
                       }}
+                      type="submit"
+                      variant="contained"
                     >
-                      <Avatar sx={{ mb: "8px", bgcolor: "#ffffff" }}>
-                        <LockOutlinedIcon />
-                      </Avatar>
-                      <Typography fontSize="30px">Create Account</Typography>
-                    </Box>
-                    <Box
-                      component="form"
-                      noValidate
-                      // onSubmit={handleSubmit}
-                      sx={{ mt: 2 }}
-                    >
-                      <Grid container spacing={1}>
-                        <Grid item xs={12} sx={{ ml: "3em", mr: "3em", mb: '15px' }}>
-                          <TextField
-                            required
-                            fullWidth
-                            id="email"
-                            label="Username"
-                            name="email"
-                            autoComplete="email"
-                          />                         
-                        </Grid>
-                        <Grid item xs={12} sx={{ ml: "3em", mr: "3em" }}>
-                          <TextField
-                            required
-                            fullWidth
-                            name="password"
-                            label="Password"
-                            type="password"
-                            id="password"
-                            autoComplete="new-password"
-                            onChange={(e) => {
-                              changePassword(e.target.value);
-                            }}
-                          />
-                          <FormControl fullWidth sx={{ mt: 1 }}>
-                            <Grid container spacing={2} alignItems="center">
-                              <Grid item>
-                                <Box
-                                  sx={{
-                                    bgcolor: level?.color,
-                                    width: 85,
-                                    height: 8,
-                                    borderRadius: "7px",
-                                  }}
-                                />
-                              </Grid>
-                              <Grid item>
-                                <Typography
-                                  variant="subtitle1"
-                                  fontSize="0.75rem"
-                                >
-                                  {level?.label}
-                                </Typography>
-                              </Grid>
-                            </Grid>
-                          </FormControl>
-                        </Grid>
-                        <Grid item xs={12} sx={{ ml: "3em", mr: "3em" }}>
-                          <TextField
-                            required
-                            fullWidth
-                            name="confirmpassword"
-                            label="Confirm Password"
-                            type="password"
-                            id="confirmpassword"
-                            autoComplete="new-password"
-                          />
-                        </Grid>
-                        <Grid
-                          item
-                          xs={12}
-                          display="flex"
-                          justifyContent="center"
-                        >
-                          <Button
-                            type="submit"
-                            variant="contained"
-                            size="large"
-                            sx={{
-                              mt: "10px",
-                              mr: "20px",
-                              borderRadius: 28,
-                              color: "#ffffff",
-                              minWidth: "340px",
-                              backgroundColor: "#FF9A01",
-                            }}
-                          >
-                            Sign up
-                          </Button>
-                        </Grid>
-                        <Grid
-                          item
-                          xs={12}
-                          display="flex"
-                          justifyContent="center"
-                        >
-                          <Stack direction="row" spacing={3}>
-                            <Typography sx={{ mt: "10px", fontSize: "18px" }}>
-                              Already have an Account?{" "}
-                              <span
-                                style={{ color: "#beb4fb", cursor: "pointer" }}
-                                onClick={() => {
-                                  navigate("/login");
-                                }}
-                              >
-                                Sign In
-                              </span>
-                            </Typography>
-                          </Stack>
-                        </Grid>
-                      </Grid>
-                    </Box>
-                  </Box>
-                </Container>
+                      Xác nhận
+                    </Button>
+                  </form>
+                </div>
               </Box>
-            </Grid>
+            </Box>
           </Grid>
-        </Box>
-      </div>
+          <Grid
+            xs={12}
+            lg={6}
+            sx={{
+              alignItems: "center",
+              background:
+                "radial-gradient(circle, rgba(9,50,121,1) 16%, rgba(0,212,255,1) 100%)",
+              color: "white",
+              display: "flex",
+              justifyContent: "center",
+              "& img": {
+                maxWidth: "100%",
+              },
+            }}
+          >
+            <Box>
+              <img alt="" src={bg} />
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
     </>
   );
 }

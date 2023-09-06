@@ -1,8 +1,7 @@
-import React from "react";
-import { Box, Stack } from "@mui/material";
-import PredictWeather from "./PredictWeather";
+import { Stack } from "@mui/material";
 import HourTemp from "./HourTemp";
 import News from "./News";
+import PredictWeather from "./PredictWeather";
 
 const RightSide = () => {
   return (

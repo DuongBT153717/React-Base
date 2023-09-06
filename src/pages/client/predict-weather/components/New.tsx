@@ -1,6 +1,5 @@
 import { Box, Stack, Typography, useTheme } from "@mui/material";
 import NEWS from "../../../../assets/images/predict-weather-page/title.png";
-import React from "react";
 
 const New = () => {
   const theme = useTheme()

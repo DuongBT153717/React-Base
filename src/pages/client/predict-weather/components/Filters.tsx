@@ -1,7 +1,7 @@
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import {
   Box,
   Checkbox,
-  Divider,
   FormControl,
   FormControlLabel,
   FormGroup,
@@ -10,9 +10,8 @@ import {
   Radio,
   RadioGroup,
   Select,
-  Typography,
+  Typography
 } from "@mui/material";
-import FilterAltIcon from "@mui/icons-material/FilterAlt";
 
 const Filters = () => {
   return (

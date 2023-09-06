@@ -12,36 +12,40 @@ import Register from "./pages/auth/register";
 import ClientContact from "./pages/client/contact";
 import ClientHealthAndActivity from "./pages/client/health-and-activity";
 import ClientIntro from "./pages/client/home";
-import ClientHomePage from "./pages/client/weather";
+import { ClientPredictWeather } from "./pages/client/predict-weather";
+import ClientHome from "./pages/client/weather";
 import ClientWeather from "./pages/client/weather-page";
 import { LightTheme, darkTheme } from "./themes/theme";
-import ClientHome from "./pages/client/weather";
-import { ClientPredictWeather } from "./pages/client/predict-weather";
+import AdminContact from "./pages/admin/contact";
+import AdminProfile from "./pages/admin/profile";
+import AdminTeam from "./pages/admin/team";
+import AdminChanagePassword from "./pages/admin/change-password";
+import ClientChude from "./pages/client/chude";
 function App() {
-  const [theme, setTheme] = useState(darkTheme);
+  const [theme, setTheme] = useState(LightTheme);
 
-  useEffect(() => {
-    const getCurrentTime = () => {
-      const currentDate = new Date();
-      const currentHour = currentDate.getHours();
+  // useEffect(() => {
+  //   const getCurrentTime = () => {
+  //     const currentDate = new Date();
+  //     const currentHour = currentDate.getHours();
 
-      if (currentHour >= 6 && currentHour < 18) {
-        setTheme(LightTheme);
-      } else {
-        setTheme(darkTheme);
-      }
-    };
+  //     if (currentHour >= 6 && currentHour < 18) {
+  //       setTheme(LightTheme);
+  //     } else {
+  //       setTheme(darkTheme);
+  //     }
+  //   };
 
-    getCurrentTime();
+  //   getCurrentTime();
 
-    const interval = setInterval(() => {
-      getCurrentTime();
-    }, 60000); // Update every minute
+  //   const interval = setInterval(() => {
+  //     getCurrentTime();
+  //   }, 60000); // Update every minute
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -50,8 +54,9 @@ function App() {
           <ProSidebarProvider>
           <BrowserRouter>
             <Routes>
+              
               <Route path="*" element={<>Chua co trang nay</>} />
-              <Route path="/" element={<Navigate to='client/weather' />} />
+              <Route path="/" element={<Navigate to='client/home' />} />
               <Route path="/client" element={<ClientLayout />}>
                 <Route index={true} path="intro" element={<ClientIntro />} />
                 <Route path="contact" element={<ClientContact />} />
@@ -59,9 +64,14 @@ function App() {
                 <Route path="home" element={<ClientHome />} />
                 <Route path="weather" element={<ClientWeather />} />
                 <Route path="predict-weather" element={<ClientPredictWeather />} />
+                <Route path="chude" element={<ClientChude />} />
               </Route>
               <Route path="/admin" element={<AdminLayout />}>
-              <Route index={true} element={<AdminHome />} />
+                <Route index={true} element={<AdminHome />} />
+                <Route path="contact" element={<AdminContact />} /> 
+                <Route path="team" element={<AdminTeam />} />
+                <Route path="profile" element={<AdminProfile />} />
+                <Route path="changepassword" element={<AdminChanagePassword />} />
               </Route>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />

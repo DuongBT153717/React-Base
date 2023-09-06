@@ -1,8 +1,7 @@
-import React from "react";
-import SearchBar from "./SearchBar";
 import { Box } from "@mui/material";
 import Filters from "./Filters";
 import HotNews from "./HotNews";
+import SearchBar from "./SearchBar";
 
 const RightSide = () => {
   return (

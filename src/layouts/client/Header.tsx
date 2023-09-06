@@ -249,12 +249,6 @@ const typoSX = (isActive: any) => ({
   },
 });
 
-const typoLast = {
-  color: "#000",
-  fontWeight: 700,
-  "&:hover": {
-    color: "blue",
-  },
-};
+
 
 export default ClientHeader;

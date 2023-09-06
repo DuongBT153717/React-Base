@@ -9,7 +9,7 @@ import RainChart from './components/RainChart'
 const ClientWeather = () => {
   const isLight = useBackGround()
   return (
-    <Box sx={{backgroundImage: isLight? `url(${BG_BODY})`: `url(${BG_BODY_DARK})`, width: '100%', backgroundPosition:'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} width='100%'>
+    <Box sx={{backgroundImage: `url(${BG_BODY})`, width: '100%', backgroundPosition:'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} width='100%'>
       <Box sx={{maxWidth: '1800px', margin: '0 auto', padding: '0 20px'}} >
         <Banner />
         <HourTemp />
