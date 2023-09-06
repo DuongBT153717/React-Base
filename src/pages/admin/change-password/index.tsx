@@ -1,16 +1,13 @@
-import React from 'react'
 import {
-    Avatar,
-    Box,
-    Button,
-    Card,
-    CardActions,
-    CardContent,
-    Divider,
-    Grid,
-    TextField,
-    Typography
-  } from "@mui/material";
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Divider,
+  Grid,
+  TextField
+} from "@mui/material";
 import Header from '../../../components/Header';
 const AdminChanagePassword = () => {
   return (

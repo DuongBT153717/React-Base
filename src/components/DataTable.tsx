@@ -1,11 +1,10 @@
-import { Box, Button, LabelDisplayedRowsArgs } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import {
   DataGrid,
   GridToolbarContainer,
   GridToolbarExport,
   GridToolbarFilterButton,
 } from "@mui/x-data-grid";
-import React from "react";
 
 interface IDataTable {
   rows: any;
