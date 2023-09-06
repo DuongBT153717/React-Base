@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 import ClientFooter from "./Footer";
@@ -16,7 +16,9 @@ const ClientLayout = () => {
         }}
       >
         <ClientHeader />
-        <Outlet />
+        <Container>
+          <Outlet />
+        </Container>
         <ClientFooter />
       </Box>
     </Fragment>
